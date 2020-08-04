@@ -4,15 +4,19 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 
 ## Inputs
 
-### `who-to-greet`
+### `yaml-files`
 
 **Required** The name of the person to greet. Default `"World"`.
 
+### `cloud-provider`
+
+### `regions`
+
 ## Outputs
 
-### `time`
+### `cost`
 
-The time we greeted you.
+The cost 
 
 ## Example usage
 

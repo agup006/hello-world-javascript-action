@@ -9,7 +9,7 @@ try {
   const yamlFilePath = core.getInput('yaml-file');
   console.log(yamlFilePath);
   
-  const yamlFileText = fs.readFileSync(yamlFilePath, {encoding:"utf8"}) ;
+  const yamlFileText = fs.readFile(yamlFilePath, {encoding:"utf8"}) ;
 
   var costs = estimateCosts(yamlFileText, "ap-east-1", "asia-east1", "australiaeast")
   core.setOutput("costs", costs)
